@@ -20,11 +20,13 @@ const aCar = {
 
 };
 
-for (let i = 0; i < aCar.features.length; i++) {
-    console.log(aCar.features[i]);
-    }
+// for (let i = 0; i < aCar.features.length; i++) {
+//     console.log(aCar.features[i]);
+//     }
 
-
+for (let r in aCar.reg) {
+    console.log(r.toUpperCase() + ' = ' + aCar.reg[r]);
+}
 
 
 // Add a new property
