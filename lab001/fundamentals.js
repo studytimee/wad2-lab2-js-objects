@@ -1,8 +1,8 @@
 const aCar = {
     owner: "Joe Bloggs",
     previous_owners: [
-        "Alex Smith   - 1 Main Street",
-        "John Fleming - 2 High Street "
+        {name: "Alex Smith" ,  address:"- 1 Main Street"},
+        {name: "John Fleming", address:"- 2 High Street "}
     ],
     type: {
         make: 'Toyota',
@@ -28,8 +28,7 @@ aCar.colour = {
         shade: 'Cream',
     }
 }
-
-console.log('First Owner: ' + aCar.previous_owners[0])
+console.log('First Owner: ' + aCar.previous_owners[0].name +', Address: '+ aCar.previous_owners[0].address)
 
 // console.log(aCar.owner + ' drives a ' + aCar.type.make)
 // console.log(' Car registration : ' + aCar.reg.year + '' + aCar.reg.stage + '-' + aCar.reg.county + '-' + aCar.reg.number)
